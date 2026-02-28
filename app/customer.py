@@ -25,6 +25,6 @@ class Customer:
         print("You have bought:")
         for product, cost in general.items():
             print(f"{self.product_cart[product]} "
-                  f"{product}s for {cost:g} dollars")
-        print(f"Total cost is {sum(general.values())} dollars\n"
+                  f"{product}s for {cost:.2f} dollars")
+        print(f"Total cost is {sum(general.values()):.2f} dollars\n"
               f"See you again!\n")

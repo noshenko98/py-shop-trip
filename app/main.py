@@ -30,7 +30,7 @@ def shop_trip() -> None:
         for shop in list_shop:
             this_shop_price_drive = (
                 list_car[index_for_car].
-                which_store_is_closer(
+                calculate_round_trip_fuel_cost(
                     customer.location, shop.location,
                     data["FUEL_PRICE"])
             )
