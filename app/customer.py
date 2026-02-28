@@ -23,8 +23,8 @@ class Customer:
               f"Thanks, {self.name}, for your purchase!")
         general = shop.purchase(self.product_cart)
         print("You have bought:")
-        for product, count in general.items():
+        for product, cost in general.items():
             print(f"{self.product_cart[product]} "
-                  f"{product}s for {count:g} dollars")
+                  f"{product}s for {cost:g} dollars")
         print(f"Total cost is {sum(general.values())} dollars\n"
               f"See you again!\n")

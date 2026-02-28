@@ -6,7 +6,7 @@ class Shop:
         self.location = location
         self.products = products
 
-    def purchase(self, product_cart: dict) -> dict | None:
+    def purchase(self, product_cart: dict) -> dict:
         need_return = {}
         for product, count in product_cart.items():
             if product in self.products:
