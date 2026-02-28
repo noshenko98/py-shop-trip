@@ -6,10 +6,7 @@ from app.car import Car
 
 
 def shop_trip() -> None:
-    with open("C:\\Users\\TUF\\Documents\\"
-              "Mate academy\\git\\"
-              "py-shop-trip\\app\\"
-              "config.json", "rb") as json_file:
+    with open("app\config.json", "rb") as json_file:
         data = json.load(json_file)
     list_customers = []
     list_car = []
